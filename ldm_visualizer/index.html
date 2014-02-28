@@ -1,5 +1,5 @@
-<!-- Copyright (C) 2007-2014, GoodData(R) Corporation. All rights reserved. -->
 <!DOCTYPE html>
+<!-- Copyright (C) 2007-2014, GoodData(R) Corporation. All rights reserved. -->
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -10,7 +10,7 @@
 
     <link rel="stylesheet" href="../../assets/gd-labs.css">
     <link rel="shortcut icon" href="../../assets/images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/ldm_visualizer.css">
+    <link rel="stylesheet" href="ldm_visualizer.css">
 </head>
 
 <body>
@@ -39,12 +39,18 @@
     <div class="row labs-box">
         <div class="large-12 columns">
             <h2>LDM Visualizer</h2>
-            <div id="ember_root" class="ember_test">
-                <!-- Enter your HTML and/or handlebars here -->
-            </div>
+
+            <!-- Enter your HTML here -->
         </div>
     </div>
 
-    <script data-main="js/ldm_visualizer_config.js" src="../../lib/requirejs/require.js"></script>
+    <div class='row labs-disclaimer'>
+        Your use of GoodData Labs is governed by our <a target='_blank' href='http://www.gooddata.com/terms-of-use/current/' title='GoodData Terms of Use'>updated Terms of Use</a>. If you do not agree to our <a target='_blank' href='http://www.gooddata.com/terms-of-use/current/' title='GoodData Terms of Use'>updated Terms of Use</a> for GoodData Labs, then you may not use GoodData&nbsp;Labs.
+    </div>
+
+    <script src="../../lib/jquery/jquery.min.js"></script>
+    <script src="../../lib/gd-sdk-js/dist/gooddata.js"></script>
+    <script src="../../assets/gd-labs.js"></script>
+    <script src="ldm_visualizer.js"></script>
 </body>
 </html>
