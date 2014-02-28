@@ -1,0 +1,165 @@
+{
+  "projectModelView" : {
+    "model" : {
+      "projectModel" : {
+        "datasets" : [ {
+          "dataset" : {
+            "identifier" : "dataset.cars",
+            "title" : "Cars",
+            "anchor" : {
+              "attribute" : {
+                "identifier" : "attr.cars.id",
+                "title" : "Id",
+                "labels" : [ {
+                  "label" : {
+                    "identifier" : "label.cars.id.link",
+                    "title" : "Link",
+                    "type" : "GDC.link",
+                    "dataType" : "VARCHAR(128)"
+                  }
+                }, {
+                  "label" : {
+                    "identifier" : "label.cars.id",
+                    "title" : "Id",
+                    "type" : "GDC.text",
+                    "dataType" : "VARCHAR(128)"
+                  }
+                } ]
+              }
+            },
+            "attributes" : [ {
+              "attribute" : {
+                "identifier" : "attr.cars.headline",
+                "title" : "Headline",
+                "labels" : [ {
+                  "label" : {
+                    "identifier" : "label.cars.headline",
+                    "title" : "Headline",
+                    "type" : "GDC.text",
+                    "dataType" : "VARCHAR(128)"
+                  }
+                } ]
+              }
+            }, {
+              "attribute" : {
+                "identifier" : "attr.cars.seller",
+                "title" : "Seller",
+                "labels" : [ {
+                  "label" : {
+                    "identifier" : "label.cars.seller",
+                    "title" : "Seller",
+                    "type" : "GDC.text",
+                    "dataType" : "VARCHAR(128)"
+                  }
+                } ]
+              }
+            }, {
+              "attribute" : {
+                "identifier" : "attr.cars.location",
+                "title" : "Location",
+                "labels" : [ {
+                  "label" : {
+                    "identifier" : "label.cars.location",
+                    "title" : "Location",
+                    "type" : "GDC.text",
+                    "dataType" : "VARCHAR(128)"
+                  }
+                } ]
+              }
+            }, {
+              "attribute" : {
+                "identifier" : "attr.cars.has_img",
+                "title" : "Has img",
+                "labels" : [ {
+                  "label" : {
+                    "identifier" : "label.cars.has_img",
+                    "title" : "Has img",
+                    "type" : "GDC.text",
+                    "dataType" : "VARCHAR(128)"
+                  }
+                } ]
+              }
+            }, {
+              "attribute" : {
+                "identifier" : "attr.cars.year",
+                "title" : "Year",
+                "labels" : [ {
+                  "label" : {
+                    "identifier" : "label.cars.year",
+                    "title" : "Year",
+                    "type" : "GDC.text",
+                    "dataType" : "VARCHAR(128)"
+                  }
+                } ]
+              }
+            }, {
+              "attribute" : {
+                "identifier" : "attr.cars.VIN",
+                "title" : "Vin",
+                "labels" : [ {
+                  "label" : {
+                    "identifier" : "label.cars.VIN",
+                    "title" : "Vin",
+                    "type" : "GDC.text",
+                    "dataType" : "VARCHAR(128)"
+                  }
+                } ]
+              }
+            }, {
+              "attribute" : {
+                "identifier" : "attr.cars.title",
+                "title" : "Title",
+                "labels" : [ {
+                  "label" : {
+                    "identifier" : "label.cars.title",
+                    "title" : "Title",
+                    "type" : "GDC.text",
+                    "dataType" : "VARCHAR(128)"
+                  }
+                } ]
+              }
+            }, {
+              "attribute" : {
+                "identifier" : "attr.cars.model",
+                "title" : "Model",
+                "labels" : [ {
+                  "label" : {
+                    "identifier" : "label.cars.model",
+                    "title" : "Model",
+                    "type" : "GDC.text",
+                    "dataType" : "VARCHAR(128)"
+                  }
+                } ]
+              }
+            } ],
+            "facts" : [ {
+              "fact" : {
+                "identifier" : "fact.cars.price",
+                "title" : "Price",
+                "dataType" : "DECIMAL(12,2)"
+              }
+            }, {
+              "fact" : {
+                "identifier" : "fact.cars.odometer",
+                "title" : "Odometer",
+                "dataType" : "DECIMAL(12,2)"
+              }
+            } ],
+            "references" : [ "updated_at", "posted_at" ]
+          }
+        } ],
+        "dateDimensions" : [ {
+          "dateDimension" : {
+            "name" : "updated_at",
+            "title" : "updated_at"
+          }
+        }, {
+          "dateDimension" : {
+            "name" : "posted_at",
+            "title" : "posted_at"
+          }
+        } ]
+      }
+    }
+  }
+}
